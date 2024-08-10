@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    background: url('checkersback.webp') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.button {
+    padding: 30px 50px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #8B4513;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #A0522D;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #A0522D;
+    margin-top: 305px;
+    margin-left: 500px;
+    padding: 20px;
+    border: 5px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    height: 50%;
+
+}
+
+.modal-content h2 {
+    margin-top: 5px;
+    font-size: 4.5rem;
+    color: #f0ccbb;
+}
+
+.modal-content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #f4f4f4;
+}

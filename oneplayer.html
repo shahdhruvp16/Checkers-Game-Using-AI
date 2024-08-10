@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers Game</title>
+    <link rel="stylesheet" href="oneplayer.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="board" class="board"></div>
+        <div class="scoreboard-container">
+            <div id="scoreboard">
+                <h3>Score Card</h3>
+                <p id="moves">Moves: 0</p>
+                <p id="current-player">You</p>
+                <p id="player1-captures">Your Captures: 0</p>
+                <p id="player2-captures">AI Captures: 0</p>
+                
+                <button id="reset-btn">Reset</button>
+                <button id="undo-btn">Undo</button>
+                <button id="home-btn">Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="oneplayer.js"></script>
+</body>
+</html>

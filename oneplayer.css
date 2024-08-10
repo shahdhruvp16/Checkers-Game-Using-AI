@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6b07c; /* Light wooden background */
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .scoreboard-container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    background: #8b5e3c; /* Darker wooden background */
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-top: -100px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 2px solid #6f4f28; /* Border with a darker wooden color */
+  }
+  
+  #scoreboard {
+    text-align: center;
+    color: #f5deb3; /* Light wood color for text */
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  
+  #scoreboard h3 {
+    margin: 0;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    perspective: 1000px;
+  }
+  
+  .board {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 0;
+    padding: 10px;
+    border: 1px solid #c27c43; /* Darker border */
+    height: 490px;
+    width: 480px;
+    border-radius: 20px;
+    background: #c27c43; /* Light wooden color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .square {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .square.dark {
+    background: #b58863; /* Darker wood for dark squares */
+  }
+  
+  .square.light {
+    background: #f0d9b5; /* Lighter wood for light squares */
+  }
+  
+  .piece {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.2); /* Inner shadow for 3D effect */
+    transition: transform 0.2s;
+  }
+  
+  .player1 {
+    background-color: #000;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .player2 {
+    background-color: #f00;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .king {
+    font-size: 32px;
+    color: gold;
+  }
+  
+  .move-indicator {
+    width: 20px;
+    height: 20px;
+    background: #ffeb3b; /* Bright yellow for move indicator */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #winner-announcement {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #6f4f28; /* Dark wooden background */
+    color: #f5deb3; /* Light wood color for text */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  #winner-announcement.hidden {
+    display: none;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    gap: 15px;
+    padding: 25px 35px;
+    margin-top: 52px;
+    border: none;
+    border-radius: 5px;
+    background: #8b5e3c; /* Wooden color for buttons */
+    color: #f5deb3; /* Light wood color for text */
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background: #6f4f28; /* Darker wood for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  

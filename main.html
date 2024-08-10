@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <button class="button" id="playNow">Play Now</button>
+        <button class="button" id="instructions">Instructions</button>
+    </div>
+
+    <div id="instructionModal" class="modal">
+        <div class="modal-content">
+            <h2>Checkers Game Instructions</h2>
+            <p>
+                1. Checkers is played on an 8x8 board with 12 pieces on each side.<br>
+                2. The pieces move diagonally and can only move forward until they are "kinged".<br>
+                3. A piece is kinged when it reaches the farthest row from the player.<br>
+                4. Kings can move forward and backward diagonally.<br>
+                5. A piece can capture an opponent's piece by jumping over it diagonally.<br>
+                6. The game is won by capturing all of the opponent's pieces or by blocking them so they cannot move.
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
